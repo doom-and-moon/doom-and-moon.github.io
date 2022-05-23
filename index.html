@@ -2,7 +2,8 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Doomed.Money</title>
+
+<title>Doomed.Money: My little LUNAs cry out in pain!</title>
 
 <meta property="og:title" content="The Countdown on Doomed Money">
 <meta property="og:site_name" content="Doomed.Money">
@@ -10,14 +11,76 @@
 <meta property="og:type" content="website">
 <meta property="og:image" content="https://doomed.money/img/hyperion480.png">
 <meta property="og:description" content="Millions of sad little lunar eyes are haunting me.">
+
+<link rel="icon" href="img/hyperion480.png" type="image/png">
+
+<script type="text/javascript">
+/*
+ * This is some of the worst code that I have ever scratched out.
+ *
+ * The circumstance is dire.  My LUNAs are dying.
+ *
+ * I cannot waste time making elegant classes for this.
+ *
+ * Don’t judge me on this.
+ */
+
+let coindeath = Math.floor(new Date("2022-05-27T00:00:00Z").getTime() / 1000);
+
+function lz(x) {
+	return (x.toString().padStart(2, '0'));
+}
+
+let countdown = setInterval(() => {
+	let now = Math.floor(new Date().getTime() / 1000);
+	let ttl = coindeath - now;
+	let d = Math.floor(ttl / 86400);
+	ttl = Math.floor(ttl % 86400);
+	let h = Math.floor(ttl / 3600);
+	ttl = Math.floor(ttl % 3600);
+	let m = Math.floor(ttl / 60);
+	let s = Math.floor(ttl % 60);
+
+	document.getElementById("countdown").innerHTML =
+		`${d} days, ${lz(h)}:${lz(m)}:${lz(s)}`;
+});
+</script>
+<style type="text/css">
+#countdown {
+	text-align: center;
+	font-size: 200%;
+	font-weight: bold;
+}
+</style>
 </head>
 <body>
-<h1>Doomed.Money</h1>
+<h1>The Bug-Riddled Clock of Lunar Doom</h1>
 
-<p>This is a placeholder page, put up on an emergency basis.  I now have at hand urgent tasks other than web development.</p>
+<p>As matters now stand, absent a miraculous bout of sanity, my poor little LUNAs will be hardforked without consensus in:</p>
 
-<p>However, this site will be my primary point of contact.  Please bookmark and link to this, not Twitter or other totally centralized information silos.</p>
+<p id="countdown"><noscript>Congratulations!  You are smart enough to disable Javascript.  Perhaps we should be friends.</noscript></p>
 
-<p><em>Less centralization.  Less, not more.  One step at a time.</em></p>
+<p>You, dear reader, should return here at maybe approximately sort of around that time.  For I am a man on a mission:  I must prepare to heal my LUNAs from the trauma, to nurture them, to make them strong again.</p>
+
+<p>The above clock is a bug-riddled scrap of throwaway code.  It does not even try to track exactly when the hardfork will occur—let alone the moment when I will replace it with real content.  I frankly admit that it’s a gimmick to make you come back and look.  For I am an <em>artist</em>—and I don’t mean that I draw pretty pictures.
+
+<p>The whole scenario is surreal.  If you have been following the situation, you know that “surreal” is an understatement.  The voice of reason has fallen on deaf ears.  All that remains is to make art.</p>
+
+<p>Now, having spent most of my time opposing the hardfork that I still vehemently oppose, I feel that I must roll out an emergency LUNA project within about four days.  Well, why should I not?  One of the biggest, most popular programming languages was <a href="https://www.destroyallsoftware.com/talks/the-birth-and-death-of-javascript">invented in five days</a>.  Can I do worse in four?</p>
+
+<p>I will meet this surreality in the tenebrous wreckage of a doomed coin, and I will beat it for sheer <em>lunacy!</em></p>
+
+<p>Thus, here’s how it goes:  I will honestly toss you a gimmick, to make you come back and look.  I don’t know when.  <em>Soon.</em>  The above clock may be spot on-target.  I may run early or late.  I will <em>try</em> to make this schedule at least a little bit more accurate than the UST peg.  Of course, you’ll come back and look.</p>
+
+<p>At the appointed hour, whenever that may actually be, I will do something wild at the grand nexus of literature, finance, and code.  You will love it—<em>I dare you not to!</em>  I will then parlay that into other projects, which will take time to complete.</p>
+
+<p>Along the way, I will turn dross into gold, take my own financial loss as an opportunity to earn vast riches, and most importantly:  <em>Make LUNA awesome again.</em>  My LUNAs will hold their heads high.  They <em>will</em> be proud!  Their silvery little eyes, now brimming with tears, will sparkle with joy.</p>
+
+<p>When I find it convenient, perhaps I may even make a real website—replete with web3.  Eh.  Who needs a website?</p>
+
+<p>With my greetings from the darkness of the virtual new moon,</p>
+
+<p><strong>Hyperion</strong><br>
+<a href="mailto:moon@doomed.money">moon@doomed.money</a> • <a href="hyperion.asc">PGP: <tt>0C84 3524 B17F 59A9 3119  1A88 B044 D450 5EBA 310B</tt></a></p>
 </body>
 </html>
